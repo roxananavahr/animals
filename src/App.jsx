@@ -3,7 +3,8 @@ import './App.css'
 import AnimalsShow from './AnimalsShow'
 
 function getRandomAnimal(){
-  const animals = ['cat', 'bird', 'dog', 'gastor', 'horse']
+  const animals = ['cat', 'bird', 'cow', 'dog', 'gator', 'horse']
+  
   return animals[Math.floor(Math.random()* animals.length)]
 }
 

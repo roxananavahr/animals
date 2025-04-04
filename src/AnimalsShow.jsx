@@ -16,22 +16,21 @@ const svgMap = {
     cat,
     cow,
     gator,
-    heart,
     horse
 }
 
 function AnimalsShow({type}){
-    const [click, setCliks] = useState(0)
+    const [click, setClicks] = useState(0)
     
     const handleClick = () => {
-        setCliks(click + 1)
+        setClicks(click + 1)
 
     }
 
     return(
         <div
         onClick={handleClick}
-        className="animals-show"
+        className="animal-show"
 >
     <img
     src={svgMap[type]}
